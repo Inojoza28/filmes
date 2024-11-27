@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recomendações - Livros & Filmes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Tela Inicial -->
+    <div id="welcome-screen" class="screen active">
+      <h1>📚🎬 Recomendações</h1>
+      <p>Descubra livros e filmes incríveis com base no que você gosta.</p>
+      <div class="options">
+        <button id="books-btn" class="option-btn">Descobrir Livros</button>
+        <button id="movies-btn" class="option-btn">Explorar Filmes</button>
+      </div>
+    </div>
+
+    <!-- Tela de Preferências -->
+    <div id="preferences-screen" class="screen">
+      <h2>Escolha suas preferências</h2>
+      <form id="preferences-form">
+        <label>
+          <span>Gênero:</span>
+          <select id="genre" required>
+            <option value="fantasy">Fantasia</option>
+            <option value="romance">Romance</option>
+            <option value="action">Ação</option>
+            <option value="comedy">Comédia</option>
+          </select>
+        </label>
+        <button type="submit" class="option-btn">Ver Recomendações</button>
+      </form>
+    </div>
+
+    <!-- Tela de Recomendações -->
+    <div id="results-screen" class="screen">
+      <h2>Recomendações:</h2>
+      <div id="results" class="results-container"></div>
+      <button id="back-btn" class="option-btn">Voltar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
